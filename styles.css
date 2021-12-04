@@ -11,20 +11,6 @@
     }
 }
 
-@media (orientation: portrait) {
-    header {
-        height: 25vh;
-    }
-
-    main {
-        min-height: 75vh;
-    }
-
-    #right {
-        height: 100%;
-    }
-}
-
 header {
     background-color: #121212;
 
@@ -84,7 +70,7 @@ main {
     padding: 1em;
 }
 
-h3 {
+.section-title {
     font-size: 2vw;
     color: #555;
 }
@@ -121,9 +107,33 @@ h4 {
 }
 
 #right {
+    height: 100%;
     margin: 0 auto;
 }
 
 li {
     margin: .5vw 0;
+}
+
+@media (orientation: portrait) {
+    header {
+        height: 25vh;
+    }
+
+    main {
+        min-height: 75vh;
+    }
+
+    #left {
+        width: 50vw;
+    }
+
+    .section-title {
+        font-size: 3vw;
+    }
+
+    .text, .section-subtitle {
+        font-size: 2.25vw;
+    }
+
 }
