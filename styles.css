@@ -11,6 +11,20 @@
     }
 }
 
+@media (orientation: portrait) {
+    header {
+        height: 25vh;
+    }
+
+    main {
+        min-height: 75vh;
+    }
+
+    #right {
+        height: 100%;
+    }
+}
+
 header {
     background-color: #121212;
 
