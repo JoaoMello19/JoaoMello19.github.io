@@ -11,8 +11,12 @@
     }
 }
 
+html {
+    font-size: 1vw;
+}
+
 header {
-    background-color: #121212;
+    background-color: #222;
 
     display: flex;
     justify-content: center;
@@ -40,100 +44,22 @@ header {
 }
 
 #main-title {
-    font-size: 4vw;
+    font-size: 4rem;
 }
 
 #main-subtitle {
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 .header-text {
-    margin: .5em 0;
+    margin: .5rem 0;
     color: #eee;
 }
 
 main {
     display: flex;
-    flex-direction: row;
-    background-color: #efefef;
-}
-
-#left {
-    width: 33%;
-    display: flex;
     flex-direction: column;
-    background-color: #fff;
-}
-
-.content-group {
-    margin: 2vw;
-    padding: 1em;
-}
-
-.section-title {
-    font-size: 2vw;
-    color: #555;
-}
-
-hr {
-    height: .5em;
-    margin: 1vw 0;
-    background-color: #555;
-}
-
-.section-subtitle {
-    margin-bottom: .5vw;
-    font-size: 1.5vw;
-    font-weight: bold;
-}
-
-.text {
-    font-size: 1.5vw;
-}
-
-.profile-text {
-    margin: 1vw 0;
-}
-
-.contact-text {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-.contact-item, .education-item, .experiences-item, .knowledge-group {
-    margin-top: 2vw;
-}
-
-#right {
-    height: 100%;
-    margin: 0 auto;
-}
-
-li {
-    margin: .5vw 0;
-}
-
-@media (orientation: portrait) {
-    header {
-        height: 25vh;
-    }
-
-    main {
-        min-height: 75vh;
-    }
-
-    #left {
-        width: 50vw;
-    }
-
-    .section-title {
-        font-size: 3vw;
-    }
-
-    .text, .section-subtitle {
-        font-size: 2.25vw;
-    }
-
+    
+    padding: 1rem;
+    gap: 2rem;
 }
