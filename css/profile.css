@@ -1,0 +1,17 @@
+#personal-profile p {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#personal-profile .icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    color: grey;
+}
+
+#personal-profile .icon-row img {
+    height: 5rem;
+}

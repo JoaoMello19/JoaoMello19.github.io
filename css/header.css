@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+#header-content {
+    display: flex;
+    flex-direction: row;
+}
+
+#my-photo {
+    height: 10vw;
+    margin: 2em;
+    border: none;
+    border-radius: 50%;
+}
+
+#div-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main-title {
+    font-size: 2rem;
+}
+
+#main-subtitle {
+    font-size: 1.25rem;
+}
+
+.header-text {
+    margin: 0.5rem 0;
+}
