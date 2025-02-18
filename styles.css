@@ -4,19 +4,13 @@
     padding: 0;
 }
 
-@media (orientation: landscape) {
-    header {
-        height: 100vh;
-    }
-}
-
 html {
     font-size: 1vw;
+    background-color: #222;
+    color: #eee;
 }
 
 header {
-    background-color: #222;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +24,7 @@ header {
 }
 
 #my-photo {
-    height: 25vw;
+    height: 10vw;
     margin: 2em;
     border: none;
     border-radius: 50%;
@@ -43,16 +37,15 @@ header {
 }
 
 #main-title {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 #main-subtitle {
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 .header-text {
     margin: 0.5rem 0;
-    color: #eee;
 }
 
 main {
@@ -63,10 +56,38 @@ main {
     gap: 2rem;
 }
 
-main > section:nth-of-type(2n) {
-    background-color: #aaa; /* Cor de fundo cinza claro */
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    border: 1px solid grey;
 }
 
-section > h2 {
-    margin-bottom: .75rem;
+.section-title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #d97706;
+}
+
+.section-subtitle {
+    color: #0284c7;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+#knowledge-list {
+    display: flex;
+    flex-direction: row;
+}
+
+#knowledge-list > div {
+    flex: 1;
+}
+
+#knowledge-list h3 {
+    text-align: center;
 }
