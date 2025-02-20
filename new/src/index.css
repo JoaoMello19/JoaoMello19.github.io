@@ -14,3 +14,13 @@ html {
     background-color: #222;
     color: #eee;
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    border: 1px solid grey;
+}
