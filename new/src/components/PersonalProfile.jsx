@@ -1,5 +1,27 @@
 import Section from "./Section";
 
+const styles = {
+    textNode: {
+        width: "90%",
+        margin: "auto",
+        textAlign: "center",
+        fontSize: "1.2rem",
+    },
+    iconRow: {
+        display: "flex",
+        justifyContent: "center",
+        gap: "1rem",
+        margin: "1rem auto",
+    },
+    icon: {
+        heigth: "5rem",
+        width: "5rem",
+        objectFit: "contain",
+
+        border: "1px solid cyan",
+    },
+};
+
 function TextNode({ children }) {
     return <p style={styles.textNode}>{children}</p>;
 }
@@ -22,7 +44,10 @@ export default function PersonalProfile() {
             </TextNode>
 
             <IconRow>
-                <Image src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-icon-logo-png-transparent.png" alt="Logo do Node JS" />
+                <Image
+                    src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-icon-logo-png-transparent.png"
+                    alt="Logo do Node JS"
+                />
                 <Image src="/sql.png" alt="Logo do MySQL" />
                 <Image src="" alt="Logo do Python" />
                 <Image src="" alt="Logo do Java" />
@@ -58,25 +83,3 @@ export default function PersonalProfile() {
         </Section>
     );
 }
-
-const styles = {
-    textNode: {
-        width: "90%",
-        margin: "auto",
-        textAlign: "center",
-        fontSize: "1.2rem",
-    },
-    iconRow: {
-        display: "flex",
-        justifyContent: "center",
-        gap: "1rem",
-        margin: "1rem auto",
-    },
-    icon: {
-        heigth: "5rem",
-        width: "5rem",
-        objectFit: "contain",
-
-        border: "1px solid cyan"
-    },
-};

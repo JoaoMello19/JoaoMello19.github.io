@@ -1,5 +1,9 @@
 import "./App.css";
+import Contact from "./components/Contact";
+import Education from "./components/Education";
+import Experiences from "./components/Experiences";
 import Header from "./components/Header";
+import Knowledges from "./components/Knowledges";
 import PersonalProfile from "./components/PersonalProfile";
 
 function SectionContainer({ children }) {
@@ -12,6 +16,10 @@ export default function App() {
             <Header />
             <SectionContainer>
                 <PersonalProfile />
+                <Education />
+                <Experiences />
+                <Knowledges />
+                <Contact />
             </SectionContainer>
         </div>
     );
