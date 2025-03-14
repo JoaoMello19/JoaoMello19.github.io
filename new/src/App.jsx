@@ -6,25 +6,6 @@ import Header from "./components/Header";
 import Knowledges from "./components/Knowledges";
 import PersonalProfile from "./components/PersonalProfile";
 
-function SectionContainer({ children }) {
-    return <main style={styles.container}>{children}</main>;
-}
-
-export default function App() {
-    return (
-        <div>
-            <Header />
-            <SectionContainer>
-                <PersonalProfile />
-                <Education />
-                <Experiences />
-                <Knowledges />
-                <Contact />
-            </SectionContainer>
-        </div>
-    );
-}
-
 const styles = {
     container: {
         display: "flex",
@@ -33,3 +14,18 @@ const styles = {
         padding: "1rem",
     },
 };
+
+export default function App() {
+    return (
+        <div>
+            <Header />
+            <main style={styles.container}>
+                <PersonalProfile />
+                <Education />
+                <Experiences />
+                <Knowledges />
+                <Contact />
+            </main>
+        </div>
+    );
+}
