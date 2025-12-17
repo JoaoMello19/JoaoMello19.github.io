@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+
+    color: #eee;
+    font-family: "TASA Explorer", sans-serif;
+
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    background-color: #333;
+}
+
+header { 
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+    gap: 1vh;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+
+.withborder {
+    border: 1px solid #555;
+}
