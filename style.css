@@ -19,18 +19,40 @@ body {
     background-color: #333;
 }
 
-header { 
-    display: flex;
-    flex-direction: column;
-    padding: 3vh;
-    gap: 1vh;
-}
-
-h1, h2 {
+h1,
+h2 {
     text-align: center;
 }
 
+h1 {
+    color: #f33;
+    text-transform: uppercase;
+}
 
-.withborder {
+h2 {
+    color: #47f;
+    text-transform: capitalize;
+}
+
+header,
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+    gap: 3vh;
+    border: 2px solid #555;
+}
+
+section {
+    max-width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+}
+
+div.subsection {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    gap: 2vh;
     border: 1px solid #555;
 }
