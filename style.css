@@ -15,8 +15,8 @@
 body {
     display: flex;
     flex-direction: column;
-    gap: 5vh;
-    background-color: #333;
+    gap: 2.5vh;
+    background-color: #222;
 }
 
 h1,
@@ -31,7 +31,7 @@ h1 {
 
 h2 {
     color: #47f;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 header,
@@ -39,20 +39,22 @@ section {
     display: flex;
     flex-direction: column;
     padding: 3vh;
-    gap: 3vh;
-    border: 2px solid #555;
+    gap: 1.5vh;
 }
 
 section {
+    width: 1000px;
     max-width: 90vw;
     margin: auto;
     border-radius: 10px;
+    border: 2px solid #555;
+    background-color: #333;
 }
 
 div.subsection {
     display: flex;
     flex-direction: column;
     padding: 2vh;
-    gap: 2vh;
+    gap: 1vh;
     border: 1px solid #555;
 }
