@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap");
 
 :root {
-    font-size: 12pt;
+    font-size: 12pt; /* DEFAULT */
 }
 
 * {
@@ -31,7 +31,7 @@ header {
 
     h1 {
         color: #eee;
-        font-size: 2rem; /* DEFAULT */
+        font-size: 2rem;
     }
 
     h2 {
@@ -58,7 +58,7 @@ main {
 
 main h1 {
     text-align: center;
-    font-size: 1.7rem; /* DEFAULT */
+    font-size: 1.7rem;
     margin-bottom: 1.5rem;
 }
 
@@ -78,5 +78,64 @@ main section p {
 .justified {
     text-indent: 2rem;
     text-align: justify;
+    /* text-wrap: balance; */
     hyphens: auto;
+}
+
+.items-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.item-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.list-item a:hover {
+    text-decoration: underline;
+}
+
+.timeline {
+    border-left: 4px solid #ccc; /* BORD */
+    padding-left: 1.5rem;   /* PADD */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: calc((1.5rem + 7px) * (-1)); /* PADD + (BORD + WIDTH)/2 */
+    top: .3rem;
+    width: 10px;    /* WIDTH */
+    height: 10px;
+    background: #555;
+    border-radius: 50%;
+}
+
+.timeline-item h2 {
+    margin-bottom: .2rem;
+}
+
+.course {
+    margin: 0;
+}
+
+.period {
+    font-size: .9rem;
+    opacity: .7;
+    margin-bottom: .5rem;
 }
