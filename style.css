@@ -71,6 +71,11 @@ main section p {
     margin-bottom: 0.6rem;
 }
 
+#profile-photo {
+    height: 10rem;
+    max-width: 100%;
+}
+
 .subsection + .subsection {
     margin-top: 1.6rem;
 }
@@ -78,6 +83,7 @@ main section p {
 .justified {
     text-indent: 2rem;
     text-align: justify;
+    line-height: 1.25;
     /* text-wrap: balance; */
     hyphens: auto;
 }
@@ -138,4 +144,10 @@ main section p {
     font-size: .9rem;
     opacity: .7;
     margin-bottom: .5rem;
+}
+
+.experience-image {
+    display: block;
+    margin: 1rem auto;
+    height: 5rem;
 }
